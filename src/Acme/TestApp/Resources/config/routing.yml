@@ -1,0 +1,11 @@
+_welcome:
+    pattern:  /
+    defaults: { _controller: AcmeTestApp:Main:index }
+
+_userform:
+    pattern: /userform
+    defaults: { _controller: AcmeTestApp:Main:showform }
+
+_email_process:
+    pattern: /result
+    defaults: { _controller: AcmeTestApp:Main:process }

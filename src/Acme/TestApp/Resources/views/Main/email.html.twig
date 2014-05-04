@@ -1,0 +1,37 @@
+{% extends 'AcmeTestApp::layout.html.twig' %}
+
+{% block title %}Symfony - Welcome{% endblock %}
+
+{% block content_header '' %}
+
+{% block content %}
+    {% set version = constant('Symfony\\Component\\HttpKernel\\Kernel::MAJOR_VERSION') ~ '.' ~ constant('Symfony\\Component\\HttpKernel\\Kernel::MINOR_VERSION')%}
+
+	<h1 class="title">Проверка</h1>
+    
+    {{ bodytext }}
+
+	<br><br>
+
+	<table>
+		<tr>
+			<td align="center"><strong>Имя</strong></td>
+			<td align="center"><strong>Фамилия</strong></td>
+		</tr>
+		<tr>
+			<td>{{ params.name }}</td>
+			<td>{{ params.famname }}</td>
+		</tr>
+		
+	</table>
+
+	<br><hr>
+	
+<pre>
+С уваженьем, дата, подпись,
+	Отвечайте нам, а то,
+		Если вы не отзовётесь,
+			Мы напишем в Спортлото... (цитировал <strong>Александр</strong>)		
+</pre>
+
+{% endblock %}

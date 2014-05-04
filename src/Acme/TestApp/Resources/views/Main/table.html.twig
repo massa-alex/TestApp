@@ -1,0 +1,22 @@
+{% extends 'AcmeTestApp::layout.html.twig' %}
+
+{% block title %}Symfony - Welcome{% endblock %}
+
+{% block content_header '' %}
+
+{% block content %}
+ 
+    <h1 class="title">Форма</h1>
+
+	<p>Вот произвольная форма.</p>
+
+	{{ form(form) }}
+
+	<br><hr>
+	<a href="{{ path('_welcome') }}">Обратно</a>
+
+{% endblock %}
+
+
+
+
